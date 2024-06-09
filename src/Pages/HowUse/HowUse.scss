@@ -1,0 +1,43 @@
+.HowUse{
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 3rem 1rem 2rem 3rem;
+    align-items: flex-start;
+    .head-text{
+        font-size: xx-large;
+
+        b{
+            color: var(--purple-1);
+        }
+
+        @media screen and (max-width:700px) {
+            font-size: large;
+        }
+    }
+    .blocks{
+        flex-direction: column;
+        width: 100%;
+        // padding: 1rem;
+        
+        
+        .block-text{
+            flex-direction: column;
+            gap: 3rem;
+            list-style: decimal;
+            
+            li{
+                list-style: lower-roman;
+                align-items: flex-start;
+                gap: 1rem;
+                flex-direction: column;
+                h3{
+                    color: var(--purple-1);
+                    font-size: larger;
+                }
+
+            }
+
+        }
+    }
+}

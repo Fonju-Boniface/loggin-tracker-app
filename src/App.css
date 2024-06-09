@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+  /* opacity: 0.95; */
+  color: var(--color-pri);
+  
+}
+body.dark {
+  --color-pri: #fff;
+  --purple-1: #d102f194;
+  --purple: #700380;
+  --purple-1-0: #d102f166;
+  --purplescrol-1: #d102f194;
+  --purplescrol-1-0: #d102f166;
+  --navBg-1: #0c0e1eab;
+  --primary-Bg-1: #1a202c;
+}
+body.light {
+  --color-pri: #1a202c;
+  --purple-1: #f10202a4;
+  --purple-1-0: #c46666;
+  --purplescrol-1: #1a202c;
+  --purplescrol-1-0: #0c0e1e89;
+  --navBg-1: #bebec59d;
+  --primary-Bg-1: #ffffff;
+}
+span, b, button, img, select, .add-icon{
+  cursor: pointer;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexCol {
+  flex-direction: column;
+}
+.AppContainer {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #1a202c;
+  
+}
+.AppContainer.HomebgColr {
+  background: #1a202c;
+  color: #f1f1f1;
+  width: 100%;
+  min-height: 100%;
+}
+.App {
+  background: var(--navBg-1);
+  justify-content: flex-end;
+  min-height: 100vh;
+}
+
+.routes {
+  background: #1a202c;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+  
+  gap: 5rem;
+}
+.routesActive {
+  /* background: #ef0606; */
+  width: calc(100% - 200px);
+  min-height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .routesActive{
+    width: 100%;
+
+  }
+}
+
+.Herobtn {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+}
+.Herobtn .Xmark {
+  font-size: 2rem;
+  opacity: 1;
+}
+.Herobtn .Xmark:hover {
+  opacity: 0.5;
+}
+
+.Signout_form {
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+
+.NowOutBtn {
+  flex-direction: column;
+  gap: 2rem;
+}
+.NowOutBtn h1 {
+  font-size: large;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.NowOutBtn .btns .btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background: var(--purple-1);
+  opacity: 1;
+  border-radius: 0.3rem;
+}
+.NowOutBtn button :hover {
+  opacity: 0.8;
+}
+
+/* For WebKit based browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  /* width: 10px; */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* For Firefox */
+/* Note: Firefox currently only supports changing the scrollbar color */
+/* You can use a library like "overlay-scrollbars" for more advanced customization */
+/* See: https://kingsora.github.io/OverlayScrollbars/ */
+* {
+  scrollbar-color: var(--purplescrol-1) var(--purplescrol-1-0);
+  scrollbar-width: thin;
+}
+
+*::-moz-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+*::-moz-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.HeaderNAme{
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--purple-1);
+  margin: 4rem 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .HeaderNAme{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+ 
+}
+

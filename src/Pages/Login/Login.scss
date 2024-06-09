@@ -1,0 +1,152 @@
+.Login {
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  gap: 20px;
+  background: #1a202c;
+  color: #ffffff;
+
+  .Sect {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    width: 300px;
+
+    h1 {
+      font-size: large;
+      font-weight: 600;
+    }
+
+    .sectA {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0.5rem;
+      border-radius: 0.3rem;
+      outline: 0.1rem solid #d102f194;
+      width: 100%;
+      text-align: center;
+
+      .sectB {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+        width: 100%;
+
+        .inputcontrol {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.3rem;
+          width: 100%;
+
+          p {
+            font-size: 0.8rem;
+          }
+          input {
+            width: 100%;
+            padding: 0.3rem;
+            border-radius: 0.3rem;
+            opacity: 0.7;
+            border: 1px solid #d102f194;
+            color: var(--color-pri) !important;
+  background: none !important;
+            outline: none;
+            &:focus,
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        .checAc {
+          font-size: small;
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+        background: #d102f194;
+        opacity: 1;
+        border-radius: 0.3rem;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .googlesign{
+        background: rgb(5, 5, 214);
+      }
+    }
+  }
+}
+
+
+#error, #errorUp{
+    width: 100%;
+    text-align: left;
+    // color: red;
+}
+
+
+.LinkbuttonS{
+  p{
+    // color: var(--purple-1);
+    width: 100%;
+  }
+}
+.Linkbutton{
+  width: 100%;
+}
+
+.ConEmail{
+  // outline: 0.1rem solid #d102f194;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  gap: 1rem;
+  
+
+  input {
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    opacity: 0.7;
+    background: none;
+    border: 1px solid #d102f194;
+    outline: none;
+    &:focus,
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .spil{
+
+    width: 100%;
+    // gap: .5rem;
+
+    .btns{
+      gap: 1rem;
+
+      .ConEmbutton {
+        width: 100%;
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+        background: #d102f194;
+        opacity: 1;
+        border-radius: 0.3rem;
+        color: #ffffff;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+#successMessage{
+  color: green;
+}
+#errorMessage{
+  color: red;
+}

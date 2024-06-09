@@ -1,0 +1,25 @@
+.TermPo{
+    padding: 1rem;
+    padding-top: 5rem;
+    
+    
+    .boxes{
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+    
+    
+    .box{
+        align-items: flex-start;
+        gap: 1rem;
+        flex-direction: column;
+        b{
+            color: var(--purple-1);
+            font-size: larger;
+        }
+
+
+    }
+
+    }
+}

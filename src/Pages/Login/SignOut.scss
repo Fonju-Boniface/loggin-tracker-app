@@ -1,0 +1,41 @@
+.signOut{
+    width: 300px;
+    // min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 70vh;
+    
+    .box{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem .3rem;
+        border-radius: .3rem;
+        outline: .1px solid var(--purple-1);
+        width: 100%;
+        text-align: center;
+        
+        h1{
+            color: #ffffff;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .btns{
+            gap: 1rem;
+
+            button{
+                padding: .3rem;
+                font-size: 1rem;
+                background: var(--purple-1);
+                opacity: 1;
+                border-radius: .3rem;
+
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+
+    }
+}
+

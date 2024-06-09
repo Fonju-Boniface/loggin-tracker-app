@@ -1,0 +1,186 @@
+
+
+.contact {
+  gap: 6rem;
+  width: 100%;
+
+  .Sect {
+    // justify-content: space-between;
+    width: 45%;
+    min-height: 80vh;
+
+    @media screen and (max-width:100px) {
+      flex-direction: column;
+    }
+  }
+  
+  .sectOne {
+    gap: 2rem;
+    width: 80%;
+    padding-top: 4rem;
+    align-items: flex-start;
+    
+    @media screen and (max-width:1000px) {
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .imgCol {
+      // justify-content: space-between;
+      width: 40%;
+      gap: 2rem;
+
+      .img {
+        width: 100%;
+        border-radius: 0.3rem;
+
+        &:hover {
+          padding: 0.5rem;
+          outline: 0.05rem solid var(--purple-1);
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 0.3rem;
+        }
+      }
+
+      .Social {
+        gap: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .icsClas {
+          position: relative;
+          width: 2.5rem;
+          height: 2.5rem;
+          background: var(--navBg-1);
+          border-radius: .3rem;
+
+          &:hover{
+            outline: .05rem solid var(--purple-1);
+          }
+
+          small{
+            display: none;
+          }
+        }
+      }
+      @media screen and (max-width:1000px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width:1000px) {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+
+  .sectOneForm{
+    gap: 1rem;
+    width: calc(100% - 55%);
+
+    @media screen and (max-width:1000px) {
+      width: 100%;
+    }
+
+    .formControl{
+        width: 100%;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        background: var(--navBg-1);
+        align-items: flex-start;
+
+        
+
+
+        input, label, textarea{
+            width: 100%;
+        }
+        input, textarea{
+            padding: .3rem;
+            border-radius: .3rem;
+            outline: .05rem solid var(--purplescrol-1);
+            background: none;
+
+            &:focus{
+                outline: .05rem solid #bebec59d ;
+            }
+        }
+
+        
+    }
+    input.Submit{
+        width: 100%;
+        padding: 0.3rem;
+        font-size: 1.1rme;
+        border-radius: 0.3rem;
+        align-items: flex-start;
+        outline: .05rem solid var(--purplescrol-1);
+        background: var(--purple-1);
+        color: var(--color-pri);
+
+        &:hover{
+            background: none;
+        }
+    }
+
+  }
+
+
+
+  .sectTwo{
+    gap: 2rem;
+    width: 80%;
+    // justify-content: space-between;
+    align-items: flex-start;
+
+    .sect{
+      width: 50%;
+
+      @media screen and (max-width:1000px) {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+  
+      }
+    }
+
+    @media screen and (max-width:1000px) {
+      width: 100%;
+      flex-direction: column;
+      padding: 1rem;
+      align-items: center;
+
+    }
+
+
+    ul{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: .5rem;
+
+      @media screen and (max-width:1000px) {
+        width: 100%;
+        // flex-direction: column;
+      }
+
+      .addressL{
+
+        b{
+          color: var(--purple-1);
+        }
+      }
+    }
+
+     iframe{
+      gap: 1rem;
+      width: 100%;
+      padding: 1rem;
+      background: var(--navBg-1);
+    }
+  }
+}
